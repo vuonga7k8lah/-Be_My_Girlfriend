@@ -18,9 +18,44 @@
 <body onload="popup('<p>Em à hãy trả lời câu hỏi của anh nhé. Trả lời cho thật lòng đó nghe chưa ^^! :-*</p></br>'); on()"
       onunload="s()">
 <div id="bg"></div>
+<div id="dialog-overlay"></div>
+<div id="dialog-box">
+    <div class="dialog-content">
+        <div id="dialog-message"></div>
+        <div id="msb-nt">
+            <a href="#">Ok. hihi :3</a>
+        </div>
+    </div>
+</div>
+
+<div class="msg">
+
+    <h1>YÊU ANH KHÔNG ?</h1>
+
+    <h2>TẮT CÁI NÀY ĐI MÀ KHÔNG TRẢ LỜI SẼ </br>
+        PHẢI YÊU ANH SUỐT ĐỜI ♥ =))
+    </h2>
+
+
+</div>
+
+<center>
+    <div id="co">
+        <a id="edenOpenModal"
+           href="#">CÓ! EM YÊU ANH</a>
+    </div>
+
+    <div id="lbNo"
+         style="position:absolute; left: 700px; top: 300px;">
+        <input onMouseMove="move()"
+               style="cursor:pointer;"
+               type="button"
+               value="KHÔNG BAO GIỜ">
+    </div>
+</center>
 <div class="reveal-modal large"
-     id="myModal">
-    <div id="traloi">
+     id="edenModal" style="display:none;">
+    <div id="edenContent" class="modal-content">
         <h1>
             <center>ANH BIẾT MÀ <img src="img/1.gif" /></center>
         </h1>
@@ -50,44 +85,8 @@
     <div id="divResult2"></div>
 
     <div id="divResult3"></div>
-    <a class="close-reveal-modal">&#215;</a>
+    <a class="close-reveal-modal" id="edenCloseModal">&#215;</a>
 </div>
-<div id="dialog-overlay"></div>
-<div id="dialog-box">
-    <div class="dialog-content">
-        <div id="dialog-message"></div>
-        <div id="msb-nt">
-            <a href="#">Ok. hihi :3</a>
-        </div>
-    </div>
-</div>
-
-<div class="msg">
-
-    <h1>YÊU ANH KHÔNG ?</h1>
-
-    <h2>TẮT CÁI NÀY ĐI MÀ KHÔNG TRẢ LỜI SẼ </br>
-        PHẢI YÊU ANH SUỐT ĐỜI ♥ =))
-    </h2>
-
-
-</div>
-
-<center>
-    <div id="co">
-        <a data-reveal-id="myModal"
-           href="#">CÓ! EM YÊU ANH</a>
-    </div>
-
-    <div id="lbNo"
-         style="position:absolute; left: 700px; top: 300px;">
-        <input onMouseMove="move()"
-               style="cursor:pointer;"
-               type="button"
-               value="KHÔNG BAO GIỜ">
-    </div>
-</center>
-
 <div class="music"
      style="display: none;">
     <audio autoplay
@@ -98,6 +97,7 @@
                 type="audio/mp3">
     </audio>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="http://code.jquery.com/jquery-1.6.min.js"
         type="text/javascript"></script>
 <script src="js/jquery.popup.js"
@@ -105,10 +105,6 @@
 <script src="js/popup.js"
         type="text/javascript"></script>
 <script src="js/jquery-1.js"
-        type="text/javascript"></script>
-<script src="js/jquery.js"
-        type="text/javascript"></script>
-<script src="http://cdn.vietdesigner.net/data/codes/snow1.js"
         type="text/javascript"></script>
 <script src="js/main.js" type="text/javascript"></script>
 <script src="js/pace.min.js"></script>

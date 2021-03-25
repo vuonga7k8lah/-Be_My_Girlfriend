@@ -6,6 +6,9 @@ $(document).ready(function () {
     $(window).resize(function () {
         if (!$('#dialog-box').is(':hidden')) popup();
     });
+    $('#msb-nt').click(function () {
+        $('#bg').css('display', 'none');
+    });
 });
 
 function popup(message) {
@@ -41,6 +44,7 @@ $(document).ready(function () {
     $(document).bind("contextmenu", function (e) {
         return false;
     });
+    edenTogleModal();
 });
 document.addEventListener('click', musicPlay);
 
@@ -49,8 +53,23 @@ function musicPlay() {
     document.removeEventListener('click', musicPlay);
 }
 
-$(document).ready(function () {
-    $('#msb-nt').click(function () {
-        $('#bg').css('display', 'none');
+function edenTogleModal() {
+    const btnOpen = document.getElementById('edenOpenModal');
+    const panel = document.getElementById('edenModal');
+    const edenContent = document.getElementById('edenContent');
+    const edenCloseModal = document.getElementById('edenCloseModal');
+
+    if (!btnOpen || !panel) return;
+    btnOpen.addEventListener('click', (event) => {
+        event.preventDefault();
+        panel.classList.toggle('show');
+        panel.style.display = "block";
     });
-});
+    edenCloseModal.addEventListener('click', (event) => {
+        event.preventDefault();
+        panel.classList.remove('show');
+        panel.style.display = "nono";
+    })
+
+
+}

@@ -6,7 +6,7 @@
 		position: fixed; 
 		height: 100%;
 		width: 100%;
-		background: #000;
+		background: skyblue;
 		background: rgba(0,0,0,.8);
 		z-index: 100;
 		display: none;
@@ -15,14 +15,16 @@
 		}
 	
 	.reveal-modal {
-		visibility: hidden;
-		top: 80px; 
+		/* Hidden by default */
+		position: fixed; /* Stay in place */
+		top: 40px;
 		left: 50%;
+		height: 50%;
 		margin-left: -300px;
-		width: 520px;
-		background: #eee;
-		position: absolute;
-		z-index: 101;
+		width: 620px;
+		overflow: auto; /* Enable scroll if needed */
+		background-color: skyblue; /* Black w/ opacity */
+		z-index: 1;
 		padding: 30px 40px 34px;
 		-moz-border-radius: 5px;
 		-webkit-border-radius: 5px;
