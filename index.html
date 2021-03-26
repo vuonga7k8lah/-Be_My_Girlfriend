@@ -23,7 +23,8 @@
     <div class="dialog-content">
         <div id="dialog-message"></div>
         <div id="msb-nt">
-            <a href="#">Ok. hihi :3</a>
+            <a href="#"
+               onclick="musicPlay()">Ok. hihi :3</a>
         </div>
     </div>
 </div>
@@ -41,8 +42,8 @@
 
 <center>
     <div id="co">
-        <a id="edenOpenModal"
-           href="#">CÓ! EM YÊU ANH</a>
+        <a href="#"
+           id="edenOpenModal">CÓ! EM YÊU ANH</a>
     </div>
 
     <div id="lbNo"
@@ -54,8 +55,10 @@
     </div>
 </center>
 <div class="reveal-modal large"
-     id="edenModal" style="display:none;">
-    <div id="edenContent" class="modal-content">
+     id="edenModal"
+     style="display:none;">
+    <div class="modal-content"
+         id="edenContent">
         <h1>
             <center>ANH BIẾT MÀ <img src="img/1.gif" /></center>
         </h1>
@@ -85,7 +88,8 @@
     <div id="divResult2"></div>
 
     <div id="divResult3"></div>
-    <a class="close-reveal-modal" id="edenCloseModal">&#215;</a>
+    <a class="close-reveal-modal"
+       id="edenCloseModal">&#215;</a>
 </div>
 <div class="music"
      style="display: none;">
@@ -97,6 +101,11 @@
                 type="audio/mp3">
     </audio>
 </div>
+<!--<lottie-player autoplay-->
+<!--               loop-->
+<!--               speed="1"-->
+<!--               src="https://assets4.lottiefiles.com/packages/lf20_mz70xctt.json"-->
+<!--               style="width: 1000px; height: 300px;"></lottie-player>-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="http://code.jquery.com/jquery-1.6.min.js"
         type="text/javascript"></script>
@@ -106,7 +115,9 @@
         type="text/javascript"></script>
 <script src="js/jquery-1.js"
         type="text/javascript"></script>
-<script src="js/main.js" type="text/javascript"></script>
+<script src="js/main.js"
+        type="text/javascript"></script>
 <script src="js/pace.min.js"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </body>
 </html>
