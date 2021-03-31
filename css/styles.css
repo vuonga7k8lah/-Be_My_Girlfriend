@@ -1,5 +1,7 @@
 ﻿@charset  utf-8;
-
+html{
+font-size: 62,5%;
+}
 /* CSS Document */
 * {
 	padding: 0;
@@ -7,11 +9,19 @@
 }
 
 body {
-background: url('bg.jpg');
+background: url('https://static2.yan.vn/YanNews/202005/202005280923305163-a578c782-6953-462a-b143-8693882822f1.png');
 background-repeat: no-repeat;
 background-position: center;
-background-size: cover;
+background-size: auto;
 background-attachment: fixed;
+}
+.title{
+	margin-top: 50px;
+	color: transparent;
+	background-image: linear-gradient(140deg, #EADEDB 0%, #BC70A4 50%, #BFD641 75%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-size: cover;
 }
 #bg { 
 position: fixed; 
@@ -26,6 +36,7 @@ position: fixed;
 .msg {
 	margin: 0 auto;
 	text-align: center;
+	max-width: 80%;
 	font-family: 'Source Sans Pro', sans-serif;
 	color: #FFF;
 	font-size: 16px;
@@ -64,8 +75,8 @@ input[type=button] {
 	-webkit-border-radius: 5px;
 	padding: 15px 25px;
 	position: absolute;
-	left: 500px;
-	top: 300px;
+	margin-left: 500px;
+	margin-top: 100px;
 	cursor: pointer;
 	-o-transition: .5s;
 	-ms-transition: .5s;

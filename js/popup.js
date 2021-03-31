@@ -94,11 +94,11 @@ one()
 					$("#divResult").fadeIn(2000,function()
 							{
 							$("#divResult2").fadeOut(0);
-							$("#divResult2").html("<p>Anh cũng yêu em nhiều lắm<img src='img/2.gif'/></p></br>");
+							$("#divResult2").html("<p>yêu em nhiều lắm <3 <3 <3<img src='img/2.gif'/></p></br>");
 							$("#divResult2").fadeIn(2000,function()
 									{
 									$("#divResult3").fadeOut(0);
-									$("#divResult3").html("<p>Dù sau này có như thế nào hãy luôn bên anh và yêu anh như thế này em nhé! <img src='img/4.gif'/></p></br>");
+									$("#divResult3").html("<p>author:VuongTN ^^ <img src='img/4.gif'/></p></br>");
 									$("#divResult3").fadeIn(2000);
 									}
 								);
