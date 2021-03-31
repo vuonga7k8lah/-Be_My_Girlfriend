@@ -98,7 +98,7 @@ one()
 							$("#divResult2").fadeIn(2000,function()
 									{
 									$("#divResult3").fadeOut(0);
-									$("#divResult3").html("<p>author:VuongTN ^^ <img src='img/4.gif'/></p></br>");
+									$("#divResult3").html("<p>sender: VuongKMA ^^ <img src='img/4.gif'/></p></br>");
 									$("#divResult3").fadeIn(2000);
 									}
 								);

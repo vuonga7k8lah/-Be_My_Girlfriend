@@ -66,7 +66,9 @@ function edenTogleModal() {
         panel.style.display = "block";
     });
     edenCloseModal.addEventListener('click', (event) => {
+        console.log('xxxx')
         event.preventDefault();
+        $("#edenModal").attr("style", "display:none");
         panel.classList.remove('show');
         panel.style.display = "nono";
     })
