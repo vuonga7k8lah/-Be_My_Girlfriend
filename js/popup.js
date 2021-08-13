@@ -93,7 +93,12 @@ function Yeu() {
             $("#divResult2").fadeIn(2000, function () {
                     $("#divResult3").fadeOut(0);
                     $("#divResult3").html("<p>Anh Yêu Em <33333<img src='img/4.gif'/></p></br>");
-                    $("#divResult3").fadeIn(2000);
+                    $("#divResult3").fadeIn(2000,function () {
+                        $("#divResult4").fadeOut(0);
+                        $("#divResult4").html("<a href='https://www.facebook.com/vuongDTTN/'><p>Nhấn Vào Đây Để Mình Nên Duyên Nào !<img" +
+                            " src='img/2 (1).gif'/></p></a></br>");
+                        $("#divResult4").fadeIn(2000)
+                    });
                 }
             );
         }
