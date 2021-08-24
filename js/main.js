@@ -1,12 +1,12 @@
-$(document).ready(function () {
-    $('a.btn-ok, #msb-nt').click(function () {
+$(document).ready(function() {
+    $('a.btn-ok, #msb-nt').click(function() {
         $('#dialog-overlay, #dialog-box').hide();
         return false;
     });
-    $(window).resize(function () {
+    $(window).resize(function() {
         if (!$('#dialog-box').is(':hidden')) popup();
     });
-    $('#msb-nt').click(function () {
+    $('#msb-nt').click(function() {
         $('#bg').css('display', 'none');
     });
 });
@@ -16,8 +16,8 @@ function popup(message) {
     var maskWidth = $(window).width();
     var dialogTop = (maskHeight / 3) - ($('#dialog-box').height());
     var dialogLeft = (maskWidth / 2) - ($('#dialog-box').width() / 2);
-    $('#dialog-overlay').css({height: maskHeight, width: maskWidth}).show();
-    $('#dialog-box').css({top: dialogTop, left: dialogLeft}).show();
+    $('#dialog-overlay').css({ height: maskHeight, width: maskWidth }).show();
+    $('#dialog-box').css({ top: dialogTop, left: dialogLeft }).show();
     $('#dialog-message').html(message);
 }
 
@@ -33,15 +33,20 @@ function move() {
 }
 
 function dongy() {
+    setTimeout(function() {
+        let result = confirm('Anh Không Tin Vào Duyên Số,Nhưng Nếu Em Đồng Ý Thì Mình Sẽ Nên Duyên Đó <3');
+        if (result) {
+            window.location = "https://www.facebook.com/vuongDTTN/";
+        }
+    }, 20000);
     if (kt == false) {
 
         kt = true
-    } else {
-    }
+    } else {}
 }
 
-$(document).ready(function () {
-    $(document).bind("contextmenu", function (e) {
+$(document).ready(function() {
+    $(document).bind("contextmenu", function(e) {
         return false;
     });
     edenTogleModal();
@@ -64,6 +69,7 @@ function edenTogleModal() {
         event.preventDefault();
         panel.classList.toggle('show');
         panel.style.display = "block";
+        dongy();
     });
     edenCloseModal.addEventListener('click', (event) => {
         console.log('xxxx')
@@ -75,3 +81,8 @@ function edenTogleModal() {
 
 
 }
+setInterval(function() {
+    let aColor = ['#FF0000', '#FF7F00', '#FFFF00', '#1aff00', '#0000FF', '#4B0082', '#8F00FF'];
+    let randomIndex = Math.floor(Math.random() * aColor.length);
+    document.getElementById("title_code").style.color = aColor[randomIndex];
+}, 1000)

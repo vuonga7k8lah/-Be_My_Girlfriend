@@ -1,5 +1,5 @@
-﻿status = "Mr.Linhkool"
-var a = [], n = ""
+﻿var a = [],
+    n = ""
 a[1] = 'Đ';
 a[2] = 'ú';
 a[3] = 'n';
@@ -65,16 +65,15 @@ function one() {
     setTimeout("one()", 1)
 }
 
-function s() {
-}
+function s() {}
 
 function on() {
     one()
 }
 
-$(document).ready(function () {
+$(document).ready(function() {
     $('#k').hide();
-    $('h1').click(function () {
+    $('h1').click(function() {
         $('.active').removeClass('active');
         $('#k').slideUp('fast');
         if ($(this).next('#k').is(':hidden') == true) {
@@ -87,21 +86,24 @@ $(document).ready(function () {
 function Yeu() {
     $("#divResult").fadeOut(0);
     $("#divResult").html("</br><h2>haha đừng có chối nữa nhé ! <img src='img/3.gif'</img></h2>");
-    $("#divResult").fadeIn(2000, function () {
-            $("#divResult2").fadeOut(0);
-            $("#divResult2").html("<p>yêu em nhiều lắm <3 <3 <3<img src='img/2.gif'/></p></br>");
-            $("#divResult2").fadeIn(2000, function () {
-                    $("#divResult3").fadeOut(0);
-                    $("#divResult3").html("<p>Anh Yêu Em <33333<img src='img/4.gif'/></p></br>");
-                    $("#divResult3").fadeIn(2000,function () {
-                        $("#divResult4").fadeOut(0);
-                        $("#divResult4").html("<a href='https://www.facebook.com/vuongDTTN/'><p>Nhấn Vào Đây Để Mình Nên Duyên Nào !<img" +
-                            " src='img/2 (1).gif'/></p></a></br>");
-                        $("#divResult4").fadeIn(2000)
-                    });
-                }
-            );
+    $("#divResult").fadeIn(2000, function() {
+        $("#divResult2").fadeOut(0);
+        $("#divResult2").html("<p>yêu em nhiều lắm <3 <3 <3<img src='img/2.gif'/></p></br>");
+        $("#divResult2").fadeIn(2000, function() {
+            $("#divResult3").fadeOut(0);
+            $("#divResult3").html("<p>Anh Yêu Em <33333<img src='img/4.gif'/></p></br>");
+            $("#divResult3").fadeIn(2000, function() {
+                $("#divResult4").fadeOut(0);
+                $("#divResult4").html("<a href='https://www.facebook.com/vuongDTTN/'><p>Nhấn Vào Đây Để Mình Nên Duyên Nào !<img" +
+                    " src='img/2 (1).gif'/></p></a></br>");
+                $("#divResult4").fadeIn(2000)
+            });
+        });
+    });
+    setTimeout(function() {
+        let result = confirm('Anh Không Tin Vào Duyên Số,Nhưng Nếu Em Đồng Ý Thì Mình Sẽ Nên Duyên Đó <3');
+        if (result) {
+            window.location = "https://www.facebook.com/vuongDTTN/";
         }
-    );
+    }, 10000);
 }
-				
